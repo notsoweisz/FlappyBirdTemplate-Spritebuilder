@@ -210,7 +210,7 @@
     for (CCNode *cloud in _clouds) {
         // move the cloud
         cloud.position = ccp(cloud.position.x -
-                             (character.physicsBody.velocity.x * delta * 1.2), cloud.position.y); // remove * 1.2 to have clouds move the same speed as bushes and pipes
+                             (character.physicsBody.velocity.x * delta), cloud.position.y);
         
         // if the left corner is one complete width off the screen,
         // move it to the right
